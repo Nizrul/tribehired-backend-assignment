@@ -11,7 +11,7 @@ const getAll = async () => {
             return group;
         }, {})
 
-        posts = (await axios.get(process.env.API_BASE_URL + '/comments')).data;
+        posts = (await axios.get(process.env.API_BASE_URL + '/posts')).data;
 
         return posts.map(post => {
             return {
